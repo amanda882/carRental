@@ -6,6 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Estimator</title>
+    <style>
+        fieldset{
+            margin: auto;
+            width: 400px;
+            background-color: rgb(2, 2, 2);
+            text-align: left;
+        }
+        body{
+            padding: 69px;
+        }
+        h1{
+            color: rgb(246, 159, 173);
+            font-size: xx-large;
+            text-align: center;
+        }
+        label{
+            color: white;
+        }
+        input{
+            color: white;
+        }
+        text{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -15,7 +44,7 @@
     <fieldset>
         <form action="">
             <h1>Manda's Car Rental</h1>
-            <label for="pickUpDate">Pickup Date:</label>
+            <label for="pickUpDate">Pickup Date:   </label>
             <input type="text" name="pickUpDate" id="pickUpDate">
             <br>
             <label for="numOfDays">Number of days:</label> 
@@ -24,16 +53,19 @@
             <br>
             <p>Options:</p>
             <input type="checkbox" name="electronicTollTag" id="electronicTollTag">
-            Electronic Toll Tag ($3.95/day)
+            <label for="electronicTollTag">Electronic Toll Tag ($3.95/day)</label> 
             <br>
-            <input type="checkbox" name="gps" id="gps">GPS ($2.95/day)
+            <input type="checkbox" name="gps" id="gps">
+            <label for="gps">GPS ($2.95/day)</label>
             <br>
             <input type="checkbox" name="roadside" id="roadside">
-            Roadside Assistance ($2.95/day)
+            <label for="roadside">Roadside Assistance ($2.95/day)</label>
             <br>
             <p>Under 25:</p>
-            <input type="radio" name="underAge" id="underAge">Yes
-            <input type="radio" name="underAge" id="underAge">No 
+            <input type="radio" name="underAge" id="underAge">
+            <label for="underAge">Yes</label>
+            <input type="radio" name="underAge" id="underAge">
+            <label for="underAge">No</label> 
             <br>
             <br>
             <input type="button" value="Estimate Total Cost">
